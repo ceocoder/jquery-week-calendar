@@ -79,12 +79,15 @@
 			eventNew : function(calEvent, $event) {
 				displayMessage("<strong>Added event</strong><br/>Start: " + calEvent.start + "<br/>End: " + calEvent.end);
 				alert("You've added a new event. You would capture this event, add the logic for creating a new event with your own fields, data and whatever backend persistence you require.");
+				alert("new event " + calEvent.start + " stop " + calEvent.stop);
 			},
 			eventDrop : function(calEvent, $event) {
 				displayMessage("<strong>Moved Event</strong><br/>Start: " + calEvent.start + "<br/>End: " + calEvent.end);
+				alert("new event " + calEvent.start + " stop " + calEvent.stop);
 			},
 			eventResize : function(calEvent, $event) {
 				displayMessage("<strong>Resized Event</strong><br/>Start: " + calEvent.start + "<br/>End: " + calEvent.end);
+				alert("new event " + calEvent.start + " stop " + calEvent.stop);
 			},
 			eventClick : function(calEvent, $event) {
 				displayMessage("<strong>Clicked Event</strong><br/>Start: " + calEvent.start + "<br/>End: " + calEvent.end);
